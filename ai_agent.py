@@ -7,7 +7,7 @@ import os
 # Load .env from project root (same folder as requirements.txt)
 import pathlib
 
-BASE_DIR = pathlib.Path(__file__).resolve().parents[1]
+BASE_DIR = pathlib.Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
 
 HF_TOKEN = os.getenv("HF_TOKEN")
